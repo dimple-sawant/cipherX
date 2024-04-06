@@ -1,0 +1,117 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0px;
+	padding: 0px;
+	width: 100%;
+	font-family: system-ui, "Segoe UI", "Roboto", "Ubuntu", "Cantarell",
+		"Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+		"Segoe UI Symbol", "Noto Color Emoji";
+
+	background-image: url("./background.jpg");
+	overflow-x: hidden;
+}
+
+header {
+	position: sticky;
+	display: block;
+	background-color: lightblue;
+	margin: 0 0 10px 0;
+}
+
+header ul {
+	display: flex;
+	margin-top: 0;
+	padding: 0;
+	align-items: center;
+	list-style: none;
+}
+
+header ul li:first-of-type {
+	display: block;
+	padding: 0;
+	background-color: black;
+}
+
+header ul li:nth-child(2) {
+	margin-left: 1rem;
+	font-weight: bolder;
+	font-size: x-large;
+}
+
+main {
+	display: block;
+	width: 100%;
+	margin: 0 auto;
+	padding: 1rem;
+}
+
+main > div {
+	margin: 0 auto;
+	padding: 1rem;
+	display: block;
+	width: 75%;
+}
+
+#c-select {
+	margin: 1rem 0;
+}
+
+#c-select > label {
+	display: block;
+	margin-bottom: 0.5rem;
+	font-weight: bold;
+	font-size: large;
+	color: white;
+}
+
+#c-select > select {
+	margin: 0;
+	padding: 0.25rem;
+	font-size: 1rem;
+	font-weight: bolder;
+	width: 100%;
+	outline: none;
+	border-radius: 5px;
+}
+
+#inp {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	width: 100%;
+	gap: 1rem;
+	margin: 0;
+}
+
+textarea {
+	resize: vertical;
+	font-size: 1rem;
+	width: 100%;
+	overflow: auto;
+	border: 1px solid black;
+	border-radius: 5px;
+	line-height: 1.5;
+	letter-spacing: 1px;
+}
+
+.info-card {
+	margin: 1rem 0;
+	padding: 1rem;
+	background-color: whitesmoke;
+	border-radius: 5px;
+	display: none;
+}
+
+.info-card.active {
+	display: block;
+}
+
+.info-card > h3 {
+	margin-top: 0;
+}
+
+.info-card > p {
+	font-weight: 600;
+}

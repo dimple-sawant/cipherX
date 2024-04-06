@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
+
+		<link rel="stylesheet" href="./style.css" />
+		<title>CipherX</title>
+	</head>
+
+	<body>
+		<header>
+			<nav>
+				<ul>
+					<li>
+						<img src="logo.svg" />
+					</li>
+					<li>
+						<strong>Cipher<em>X</em></strong>
+					</li>
+				</ul>
+			</nav>
+		</header>
+		<main>
+			<div>
+				<div id="c-select">
+					<label for="cipher-select">Choose Type:</label>
+					<select id="cipher-select" required>
+						<option value="morse" selected>Morse</option>
+						<option value="caesar">Caesar Cipher</option>
+						<option value="rot13">ROT13</option>
+					</select>
+				</div>
+				<div id="inp">
+					<textarea id="text-inp" cols="20" rows="10"></textarea>
+					<textarea id="text-out" cols="20" rows="10"></textarea>
+				</div>
+				<div>
+					<div class="info-card active" id="info-card-morse">
+						<h3>
+							<a href="https://en.wikipedia.org/wiki/Morse_code">Morse code</a>
+						</h3>
+						<p>
+							Morse code is a method used in telecommunication to encode text
+							characters as standardized sequences of two different signal
+							durations, called dots and dashes, or dits and dahs. Morse code is
+							named after Samuel Morse, one of the early developers of the
+							system adopted for electrical telegraphy.
+						</p>
+					</div>
+					<div class="info-card" id="info-card-caesar">
+						<h3>
+							<a href="https://en.wikipedia.org/wiki/Caesar_cipher"
+								>Caesar's Cipher</a
+							>
+						</h3>
+						<p>
+							In cryptography, a Caesar cipher, also known as Caesar's cipher,
+							the shift cipher, Caesar's code, or Caesar shift, is one of the
+							simplest and most widely known encryption techniques. It is a type
+							of substitution cipher in which each letter in the plaintext is
+							replaced by a letter some fixed number of positions down the
+							alphabet. For example, with a left shift of 3, D would be replaced
+							by A, E would become B, and so on. The method is named after
+							Julius Caesar, who used it in his private correspondence.
+						</p>
+					</div>
+					<div class="info-card" id="info-card-rot13">
+						<h3>
+							<a href="https://en.wikipedia.org/wiki/ROT13">ROT13</a>
+						</h3>
+						<p>
+							ROT13 (Rotate13, "rotate by 13 places", sometimes hyphenated
+							ROT-13) is a simple letter substitution cipher that replaces a
+							letter with the 13th letter after it in the latin alphabet. ROT13
+							is a special case of the Caesar cipher which was developed in
+							ancient Rome.
+						</p>
+					</div>
+				</div>
+			</div>
+		</main>
+	</body>
+	<script src="./index.js"></script>
+</html>
